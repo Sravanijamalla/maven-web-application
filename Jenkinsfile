@@ -8,8 +8,8 @@ node{
         sh "${mavenHome}/bin/mvn clean package"
     }
     /* stage('ExecuteSonarqubeReport'){
-	    sh "${mavenHome}/bin/mvn clean sonar:sonar" */
-	 }
+	    sh "${mavenHome}/bin/mvn clean sonar:sonar" 
+	 }*/
 	 stage('UploadArtifactIntoNexusServer'){
 	    sh "${mavenHome}/bin/mvn clean deploy"
 	 }
