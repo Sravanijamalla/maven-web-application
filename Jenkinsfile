@@ -20,11 +20,11 @@ node('Wallmart-Node'){
             sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@18.218.131.41:/opt/tomcat9/webapps"
         }
 	 }
-	 stage('Email Notification'){
+	/* stage('Email Notification'){
 	    emailext attachLog: true, body: '''Build Success
 
 
         Regards,
         Sravani''', replyTo: 'sravanij2116@gmail.com', subject: 'Build Success...!', to: 'sravani.jamalla@gmail.com'
-	}
+	}*/
 }
